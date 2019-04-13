@@ -13,9 +13,16 @@ Orders.prototype.assignId = function (pizzaOrder) {
   return this.currentId;
 }
 
-function pizzaOrder (firstName, phoneNumber,size,toppings,crust,cost) {
+Orders.prototype.addToppings = function(pizzaOrder) {
+
+}
+
+Orders.prototype.addSize = function (pizzaOrder) {
+  
+}
+
+function pizzaOrder (firstName, size,toppings,crust,cost) {
   this.firstName: firstName,
-  this.phoneNumber,
   this.size: size,
   this.toppings: toppings,
   this.crust: crust,

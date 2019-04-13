@@ -13,4 +13,4 @@
 | _User will choose what size pizza they want to order, and it link to their order once chosen._ | _"XL"_ | _Jane Doe's Order: Size: XL;_ |
 | _User will choose if they want toppings on their pizza, none, one, or multiple_ | _checkbox: pepperoni & pineapple_ | _Jane Doe's Order: Size: XL; Topping: pepperoni, pineapple;_ |
 | _User will be able to choose no sauce as an option._ | _checkbox: no sauce_ | _Jane Doe's Order: Size: XL; Topping: pepperoni, pineapple; Sauce: none;_ |
-| _User wont be able to input punctuation or numbers into form fields._ | _.';,/'_ | alert(Sorry please fill out)
+| _User wont be able to input punctuation or numbers into form fields._ | _.';,/'_ | alert(Sorry please fill out)|
