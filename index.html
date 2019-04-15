@@ -8,79 +8,56 @@
     <title>Pizza Creator</title>
   </head>
   <body>
+    <div class="jumbotron">
+      <h1>Create Your Pizza Order</h1>
+    </div>
+
     <div class="container">
-      <form class="pizza-creator">
+      <form id="pizza-creator">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="customer-name">Please Enter the Name you'd like attached to your Order:</label>
+            <input class="form-control" id="customer-name" type="text">
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="customer-number">Please Enter the Phone Number you like us to contact you at:</label>
+            <input class="form-control" id="customer-number" type="number">
+          </div>
+        </div>
+
         <div class="form-group">
           <label for="pizzaSize">Select Your Pizza Size:</label>
-          <select class="form-control" name="pizzaSize">
+          <select id="pizzaSize" class="form-control" name="pizzaSize">
+            <option>Select</option>
             <option>Medium</option>
             <option>Large</option>
             <option>X-Large</option>
           </select>
         </div>
-        
+
         <div class="form-group">
-          <label for="customer-name">Please Enter the Name you'd like attached to your Order:</label>
-          <input class="form-control" id="customer-name" type="text">
+          <p>In the past year what modes of transportation have you used to travel. Please select all that apply:</p>
+          <input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni<br>
+          <input type="checkbox" name="toppings" value="Pineapple"> Pineapple<br>
+          <input type="checkbox" name="toppings" value="Bacon"> Bacon<br>
+          <input type="checkbox" name="toppings" value="Mushrooms">Mushrooms<br>
+          <input type="checkbox" name="toppings" value="Olives">Olives<br>
+          <input type="checkbox" name="toppings" value="Sausage">Sausage<br>
+          <input type="checkbox" name="toppings" value="Chicken">Chicken<br>
+          <input type="checkbox" name="toppings" value="Peppers">Peppers<br>
+          <input type="checkbox" name="toppings" value="Anchovies">Anchovies<br>
         </div>
 
-        <div class="">
+        <button type="submit" class="btn btn-danger" id="create-pizza-btn">Create Pizza!</button>
 
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" id="pepperoniTop" type="checkbox" name="pepperoni">
-          <label class="form-check-label" for="pepperoniTop">Pepperoni</label>
-        </div>
-
-        <div class="form-check">
-          <input class="form-check-input" id="pineappleTop" type="checkbox" name="pepperoni" disabled>
-          <label class="form-check-label" for="pineappleTop">Pepperoni</label>
-        </div>
-
-        <div class="form-check">
-          <input class="form-check-input" id="baconTop" type="checkbox" name="pepperoni" disabled>
-          <label class="form-check-label" for="baconTop">Pepperoni</label>
-          </div>
-
-        <div class="form-check">
-          <input class="form-check-input" id="mushroomsTop" type="checkbox" name="pepperoni" disabled>
-          <label class="form-check-label" for="mushroomsTop">Pepperoni</label>
-        </div>
-
-        <div class="form-check">
-          <input class="form-check-input" id="canadianbaconTop" type="checkbox" name="pepperoni" disabled>
-          <label class="form-check-label" for="canadianbaconTop">Pepperoni</label>
-        </div>
-
-        <div class="form-check">
-          <input class="form-check-input" id="olivesTop" type="checkbox" name="pepperoni" disabled
-          <label class="form-check-label" for="olivesTop">Pepperoni</label>
-        </div>
-
-        <div class="form-check">
-          <input class="form-check-input" id="sausageTop" type="checkbox" name="pepperoni" disabled>
-          <label class="form-check-label" for="sausageTop">Pepperoni</label>
-        </div>
-
-        <div class="form-check">
-          <input class="form-check-input" id="chickenTop" type="checkbox" name="pepperoni" disabled>
-          <label class="form-check-label" for="chickenTop">Pepperoni</label>
-        </div>
-
-        <div class="form-check">
-          <input class="form-check-input" id="bellpeppersTop" type="checkbox" name="pepperoni" disabled
-          <label class="form-check-label" for="bellpeppersTop">Pepperoni</label>
-        </div>
-
-        <div class="form-check">
-          <input class="form-check-input" id="anchoviesTop" type="checkbox" name="pepperoni" disabled
-          <label class="form-check-label" for="anchoviesTop">Pepperoni</label>
-        </div>
       </form>
+      <div id="final-order">
+        <p><span id=results></span></p>
+        <ul id="toppingsList">
 
-      <button type="button" classame="button"></button>
-
+        </ul>
+      </div>
     </div>
-
   </body>
 </html>
